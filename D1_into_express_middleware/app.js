@@ -10,7 +10,7 @@ app.get('/',(req,res)=>{
     // console.log("Homepage get request");
 })
 
-app.get('/user/',(req,res)=>{
+app.get('/users/',(req,res)=>{
     res.send(jsonData)
 })
 
