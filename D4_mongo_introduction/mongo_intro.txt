@@ -1,0 +1,42 @@
+//create and use database
+> use assignment
+
+
+//create collection
+>db.createCollection("users")
+
+
+>db.users.insert({"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21})
+
+>db.users.insert({"firstname":"assa","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21})
+
+>db.users.insert({"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21})
+
+>db.users.insert({"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21})
+
+>db.users.insert({"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21},
+		{"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21},
+		{"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21},{
+		"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21})
+
+
+>db.users.insert({"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21},
+		{"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21},
+		{"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21},{
+		"firstname":"Dharmesh","Lastname":"sonar","email":"d@gmail.com","gender":"male","ipaddress":"127.0.0.1","age":21})
+
+>db.users.find().pretty()
+
+>db.users.findOne().pretty() 		//first element 
+
+//update 
+
+>db.users.updateOne({"first_name":"sayali"},{$set :{"lastname":"pagar"}})
+
+>db.users.updateMany({"age":21},{$set:{"lastname":"sonar"}})
+
+>db.users.deleteMany({"lastname":"sonar"})
+
+>db.users.deleteMany({})
+
+>db.dropDatabase()
