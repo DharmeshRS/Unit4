@@ -1,6 +1,5 @@
 [   
     {"id":1,"book_name":"D","author":"Dharmesh","price":299},
-    {"id":1,"book_name":"Orbadiah","author":"Clara","price":2},
     {"id":2,"book_name":"Ansel","author":"Turley","price":10},
     {"id":3,"book_name":"Kimberly","author":"Traves","price":9},
     {"id":4,"book_name":"Inger","author":"Garbutt","price":4},
